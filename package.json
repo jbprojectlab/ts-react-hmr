@@ -5,6 +5,7 @@
   "scripts": {
     "build": "npm run clean-dist && webpack -p --config=configs/webpack/prod.js",
     "clean-dist": "rimraf dist/*",
+    "lint": "tslint --project . --fix",
     "start": "npm run start-dev",
     "start-dev": "webpack-dev-server --config=configs/webpack/dev.js",
     "start-prod": "npm run build && node server/index.js",
@@ -45,7 +46,7 @@
   },
   "resolutions": {
     "image-webpack-loader/imagemin-pngquant": "5.0.1"
-  },  
+  },
   "author": "James Byrd",
   "license": "ISC"
 }
