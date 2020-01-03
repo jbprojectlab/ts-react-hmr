@@ -1,15 +1,15 @@
 import * as React from "react";
 import {hot} from "react-hot-loader";
 import "./../assets/scss/app.scss";
-const reactLogo = require("./../assets/img/react-logo.svg");
+const tsLogo = require("./../assets/img/typescript-logo.png");
 
 class App extends React.Component<{}, undefined> {
   public render() {
     return (
       <div className="app">
-        <h1>Hello World!</h1>
-        <p>Foo to the barz</p>
-        <img src={reactLogo} height="480"/>
+        <h1>types for my scriptz</h1>
+        <p>the only way to do itz</p>
+        <img src={tsLogo} height="480"/>
       </div>
     );
   }
